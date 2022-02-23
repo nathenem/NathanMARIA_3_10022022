@@ -1,52 +1,3 @@
-/* #region DESKTOP VERSION */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&family=Shrikhand&display=swap");
-html {
-  font-family: "Roboto", "Verdana", "Geneva", "Tahoma", sans-serif;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 1300px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-h1 {
-  font-family: "Shrikhand";
-  font-size: 25px;
-}
-
-h2 {
-  font-size: 25px;
-}
-
-h3 {
-  font-size: 16px;
-}
-
-/* #region HEADER */
-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#logo {
-  width: 75%;
-}
-
-/* #endregion */
-/* #region SEARCH */
-.input-city {
-  background-color: white;
-}
-
-/* #endregion */
-/* #endregion */
 @media screen and (max-width: 768px) {
   body {
     margin: 0 auto;
@@ -54,6 +5,7 @@ header {
   }
 
   /* #region HEADER */
+
   header {
     width: 100%;
     display: flex;
@@ -75,11 +27,13 @@ header {
   }
 
   /* #endregion */
+
   /* #region SEARCH */
+
   .search-section {
     width: 100%;
     display: flex;
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242);
   }
 
   .form-city {
@@ -96,8 +50,8 @@ header {
     font-size: 16px;
     width: 100%;
     border: 0;
-    color: #353535;
-    background-color: #e0e0e0;
+    color: rgb(53, 53, 53);
+    background-color: rgb(224, 224, 224);
     box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.3);
   }
 
@@ -111,7 +65,7 @@ header {
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
     font-family: "Roboto", "Verdana", "Geneva", "Tahoma", sans-serif;
-    color: #353535;
+    color: rgb(53, 53, 53);
   }
 
   .search-box {
@@ -146,20 +100,25 @@ header {
     text-align: center;
     border-radius: 30px;
     background-color: #ff79da;
-    box-shadow: inset 0px -15px 25px #9356dc, 0px 3px 8px 0px rgba(129, 129, 129, 0.4);
+    box-shadow: inset 0px -15px 25px #9356dc,
+      0px 3px 8px 0px rgba(129, 129, 129, 0.4);
   }
 
   .search-button:hover {
-    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.8), inset 0px -15px 25px #9356dc;
+    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.8),
+      inset 0px -15px 25px #9356dc;
   }
 
   .search-button:active {
     background-color: #9356dc;
-    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.4), inset 0px -15px 25px #ff79da;
+    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.4),
+      inset 0px -15px 25px #ff79da;
   }
 
   /* #endregion */
+
   /* #region HELP */
+
   #help-section {
     padding: 20px;
     display: flex;
@@ -175,7 +134,7 @@ header {
   .help-section-box {
     display: flex;
     flex-flow: row nowrap;
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242);
     height: 60px;
     align-items: center;
     border-radius: 20px;
@@ -200,7 +159,7 @@ header {
 
   .help-section-fa {
     margin-right: 10%;
-    color: #7a7a7a;
+    color: rgb(122, 122, 122);
   }
 
   #purple-fa {
@@ -208,9 +167,11 @@ header {
   }
 
   /* #endregion */
+
   /* #region PICKING CARD */
+
   #card-section {
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242);
     width: 100%;
   }
 
@@ -262,10 +223,18 @@ header {
     margin: 0;
   }
 
+  .card-title {
+  }
+
+  .card-text {
+  }
+
   /* #endregion */
+
   /* #region FOOTER */
+
   footer {
-    background-color: #353535;
+    background-color: rgb(53, 53, 53);
     color: white;
     display: flex;
     flex-direction: column;
@@ -289,5 +258,3 @@ header {
 
   /* #endregion */
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+/* #region DESKTOP VERSION */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&family=Shrikhand&display=swap");
+html {
+  font-family: "Roboto", "Verdana", "Geneva", "Tahoma", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+/* #region HEADER */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 75%;
+}
+
+/* #endregion */
+
+/* #region SEARCH */
+
+.input-city {
+  background-color: white;
+}
+
+/* #endregion */
+
+/* #endregion */
