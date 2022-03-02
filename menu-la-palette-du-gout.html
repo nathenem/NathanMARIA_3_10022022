@@ -1,9 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>La palette du goût - OhMyFood</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/2941b60edd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a class="return-button" href="index.html">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <a class="logo-link" href="index.html"
+        ><img
+          src="ressources/images/logo/ohmyfood@2x.svg"
+          alt="Ohmyfood logo"
+          class="logo"
+        />
+      </a>
+    </header>
+    <img
+      class="menu-background"
+      src="ressources/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+      alt="La palette du goût"
+    />
+    <section id="pick-menu">
+      <div class="section-title">
+        <h1>La palette du goût</h1>
+        <i class="fa-regular fa-heart title-icon"></i>
+      </div>
+      <div class="menu-categories">
+        <p class="categories">ENTRÉES</p>
+        <div class="green-line"><p></p></div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-description">
+          <h3 class="menu-title">Fricassée d'escargot</h3>
+          <p class="menu-text">Au piment d'espelette</p>
+        </div>
+        <div class="price">
+          <p>25€</p>
+        </div>
+        <div class="menu-check">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </div>
+      <button id="pick-button" class="search-button" type="button">
+        Commander
+      </button>
+    </section>
+    <footer>
+      <h1 class="footer-title">ohmyfood</h1>
+
+      <a class="footer-link" href=""
+        ><i class="fa-solid fa-utensils footer-fa"></i> Proposer un
+        restaurant</a
+      >
+
+      <a class="footer-link" href=""
+        ><i class="fa-solid fa-handshake-angle footer-fa"></i> Devenir
+        partenaire</a
+      >
+      <a class="footer-link" href="">Mentions légales</a>
+      <a class="footer-link" href="">Contact</a>
+    </footer>
+  </body>
 </html>

@@ -1,3 +1,52 @@
+/* #region DESKTOP VERSION */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&family=Shrikhand&display=swap");
+html {
+  font-family: "Roboto", "Verdana", "Geneva", "Tahoma", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+/* #region HEADER */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 75%;
+}
+
+/* #endregion */
+/* #region SEARCH */
+.input-city {
+  background-color: white;
+}
+
+/* #endregion */
+/* #endregion */
 @media screen and (max-width: 768px) {
   body {
     margin: 0 auto;
@@ -5,7 +54,6 @@
   }
 
   /* #region HEADER */
-
   header {
     width: 100%;
     display: flex;
@@ -27,13 +75,11 @@
   }
 
   /* #endregion */
-
   /* #region SEARCH */
-
   .search-section {
     width: 100%;
     display: flex;
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
   }
 
   .form-city {
@@ -50,8 +96,8 @@
     font-size: 16px;
     width: 100%;
     border: 0;
-    color: rgb(53, 53, 53);
-    background-color: rgb(224, 224, 224);
+    color: #353535;
+    background-color: #e0e0e0;
     box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.3);
   }
 
@@ -65,7 +111,7 @@
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
     font-family: "Roboto", "Verdana", "Geneva", "Tahoma", sans-serif;
-    color: rgb(53, 53, 53);
+    color: #353535;
   }
 
   .search-box {
@@ -100,25 +146,20 @@
     text-align: center;
     border-radius: 30px;
     background-color: #ff79da;
-    box-shadow: inset 0px -15px 25px #9356dc,
-      0px 3px 8px 0px rgba(129, 129, 129, 0.4);
+    box-shadow: inset 0px -15px 25px #9356dc, 0px 3px 8px 0px rgba(129, 129, 129, 0.4);
   }
 
   .search-button:hover {
-    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.8),
-      inset 0px -15px 25px #9356dc;
+    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.8), inset 0px -15px 25px #9356dc;
   }
 
   .search-button:active {
     background-color: #9356dc;
-    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.4),
-      inset 0px -15px 25px #ff79da;
+    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.4), inset 0px -15px 25px #ff79da;
   }
 
   /* #endregion */
-
   /* #region HELP */
-
   #help-section {
     padding: 20px;
     display: flex;
@@ -134,7 +175,7 @@
   .help-section-box {
     display: flex;
     flex-flow: row nowrap;
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
     height: 60px;
     align-items: center;
     border-radius: 20px;
@@ -159,7 +200,7 @@
 
   .help-section-fa {
     margin-right: 10%;
-    color: rgb(122, 122, 122);
+    color: #7a7a7a;
   }
 
   #purple-fa {
@@ -167,11 +208,9 @@
   }
 
   /* #endregion */
-
   /* #region PICKING CARD */
-
   #card-section {
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
     width: 100%;
   }
 
@@ -227,12 +266,6 @@
     align-items: center;
   }
 
-  .title-wrapper {
-  }
-
-  .card-icon {
-  }
-
   .card-title {
     margin-top: 0;
     margin-left: 15px;
@@ -252,11 +285,9 @@
   }
 
   /* #endregion */
-
   /* #region FOOTER */
-
   footer {
-    background-color: rgb(53, 53, 53);
+    background-color: #353535;
     color: white;
     display: flex;
     flex-direction: column;
@@ -286,7 +317,6 @@
   }
 
   /* #region MENU-PICKING */
-
   .menu-background {
     width: 100%;
   }
@@ -296,7 +326,7 @@
     z-index: 1;
     position: relative;
     margin-top: -40px;
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     display: flex;
@@ -328,12 +358,11 @@
     margin-top: 0;
     height: 0px;
     width: 35px;
-    border: 2px solid rgb(172, 255, 214);
+    border: 2px solid #acffd6;
     margin-bottom: 15px;
   }
 
   /* pick card menu */
-
   .menu-card {
     height: 70px;
     margin: 0 auto;
@@ -370,7 +399,7 @@
   }
 
   .menu-check {
-    background-color: rgb(172, 255, 214);
+    background-color: #acffd6;
     color: white;
     font-size: 20px;
     width: 15%;
@@ -388,15 +417,15 @@
   }
 
   .pick-button:hover {
-    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.8),
-      inset 0px -15px 25px #9356dc;
+    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.8), inset 0px -15px 25px #9356dc;
   }
 
   .pick-button:active {
     background-color: #9356dc;
-    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.4),
-      inset 0px -15px 25px #ff79da;
+    box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.4), inset 0px -15px 25px #ff79da;
   }
 
   /* #endregion */
 }
+
+/*# sourceMappingURL=main.css.map */
