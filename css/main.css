@@ -8,6 +8,61 @@ body {
   max-width: 768px;
 }
 
+#spinner-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade_out 1s forwards;
+  animation-delay: 1.5s;
+}
+
+#spinner {
+  border-top: 16px solid #9356dc;
+  border-right: 16px solid #f2f2f2;
+  border-bottom: 16px solid #ff79da;
+  border-left: 16px solid #99e2d0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: loading 1.5s infinite;
+}
+
+.heart-changer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+.empty {
+  position: relative;
+  z-index: 2;
+  background: #f2f2f2;
+  color: #000000;
+}
+
+.empty:hover {
+  animation: fade_out 1s forwards;
+}
+
+.filled {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: -45px;
+  position: relative;
+  z-index: 1;
+}
+
 h1 {
   font-family: "Shrikhand";
   font-size: 25px;
@@ -317,6 +372,7 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .title-icon {
@@ -558,6 +614,22 @@ footer {
     transform: translateY(0px);
   }
 }
-@keyframes loading {}
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
