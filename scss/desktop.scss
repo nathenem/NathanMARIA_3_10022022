@@ -4,6 +4,10 @@
     max-width: 2000px;
   }
 
+  .heart-changer {
+    margin-right: 25px;
+  }
+
   /* #region HEADER */
 
   .logo-link {
@@ -91,7 +95,6 @@
 
   .menu-background {
     object-fit: cover;
-    width: 100%;
     height: 500px;
   }
 
@@ -99,6 +102,19 @@
     width: 60%;
     margin: 0 auto;
     margin-top: -60px;
+  }
+
+  .categories-wrapper {
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  .menu-categories {
+    padding: 0;
+    margin: 0 auto;
+    color: black;
+    font-weight: 300;
+    width: 30%;
   }
 
   /* #endregion */

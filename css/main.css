@@ -9,6 +9,8 @@ body {
 }
 
 #spinner-background {
+  position: relative;
+  z-index: 3;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -25,6 +27,8 @@ body {
 }
 
 #spinner {
+  position: relative;
+  z-index: 3;
   border-top: 16px solid #9356dc;
   border-right: 16px solid #f2f2f2;
   border-bottom: 16px solid #ff79da;
@@ -43,14 +47,25 @@ body {
   margin-right: 25px;
 }
 
-.empty {
+.empty-gray {
   position: relative;
   z-index: 2;
   background: #f2f2f2;
   color: #000000;
 }
 
-.empty:hover {
+.empty-white {
+  position: relative;
+  z-index: 2;
+  background: white;
+  color: #000000;
+}
+
+.empty-white:hover {
+  animation: fade_out 1s forwards;
+}
+
+.empty-gray:hover {
   animation: fade_out 1s forwards;
 }
 
@@ -59,8 +74,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: -45px;
-  position: relative;
-  z-index: 1;
 }
 
 h1 {
@@ -271,6 +284,23 @@ header {
   box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.4);
 }
 
+.newbox {
+  margin-top: -160px;
+  margin-left: 71%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 25%;
+  height: 30px;
+  background-color: #99e2ba;
+}
+
+.new {
+  color: #3a8d60;
+}
+
 .card-preview {
   width: 100%;
   height: 66.67%;
@@ -379,10 +409,18 @@ footer {
   align-self: center;
 }
 
+.categories-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
 .menu-categories {
-  padding-left: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: black;
   font-weight: 300;
+  width: auto;
 }
 
 .categories {
@@ -409,7 +447,23 @@ footer {
   flex-flow: row nowrap;
   justify-content: space-between;
   box-shadow: 0px 3px 8px 0px rgba(129, 129, 129, 0.3);
-  animation: items_show_up 1s forwards;
+  opacity: 0;
+}
+
+.item1 {
+  animation: items_show_up 1s backwards;
+  opacity: 1;
+}
+
+.item2 {
+  animation: items_show_up 1s backwards;
+  animation-delay: 200ms;
+  opacity: 1;
+}
+
+.item3 {
+  animation: items_show_up 1s backwards;
+  animation-delay: 400ms;
   opacity: 1;
 }
 
@@ -461,17 +515,18 @@ footer {
 }
 
 .menu-card:hover .menu-check {
-  animation: slide 1s forwards alternate;
+  animation: slide 1s forwards;
 }
 
 .menu-card:hover .menu-check i {
-  animation: rotate 1s forwards alternate;
+  animation: rotate 1s forwards;
 }
 
 #pick-button {
-  width: 50%;
+  width: fit-content;
   margin-top: 35px;
   margin-bottom: 50px;
+  padding: 0 45px;
 }
 
 .pick-button:hover {
@@ -488,6 +543,10 @@ footer {
   body {
     margin: 0 auto;
     max-width: 2000px;
+  }
+
+  .heart-changer {
+    margin-right: 25px;
   }
 
   /* #region HEADER */
@@ -568,7 +627,6 @@ footer {
   /* #region MENU */
   .menu-background {
     object-fit: cover;
-    width: 100%;
     height: 500px;
   }
 
@@ -576,6 +634,19 @@ footer {
     width: 60%;
     margin: 0 auto;
     margin-top: -60px;
+  }
+
+  .categories-wrapper {
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  .menu-categories {
+    padding: 0;
+    margin: 0 auto;
+    color: black;
+    font-weight: 300;
+    width: 30%;
   }
 
   /* #endregion */
