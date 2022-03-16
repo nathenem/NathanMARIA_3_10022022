@@ -62,11 +62,11 @@ body {
   color: #000000;
 }
 
-.empty-white:hover {
+.heart-changer:hover .empty-white {
   animation: fade_out 1s forwards;
 }
 
-.empty-gray:hover {
+.heart-changer:hover .empty-gray {
   animation: fade_out 1s forwards;
 }
 
@@ -187,6 +187,7 @@ header {
 }
 
 .search-button {
+  cursor: pointer;
   width: 70%;
   height: 45px;
   color: white;
@@ -492,8 +493,6 @@ footer {
 
 .menu-description {
   flex: 1;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 
@@ -501,6 +500,9 @@ footer {
   margin-top: 15px;
   margin-left: 15px;
   margin-bottom: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu-text {
