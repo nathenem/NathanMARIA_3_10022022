@@ -71,6 +71,7 @@ body {
 
 .filled {
   background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: -45px;
@@ -134,7 +135,7 @@ header {
 
 .input-box {
   display: flex;
-  flex-wrap: row nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -464,6 +465,12 @@ footer {
 .item3 {
   animation: items_show_up 1s backwards;
   animation-delay: 400ms;
+  opacity: 1;
+}
+
+.item4 {
+  animation: items_show_up 1s backwards;
+  animation-delay: 600ms;
   opacity: 1;
 }
 
