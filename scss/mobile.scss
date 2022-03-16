@@ -484,6 +484,12 @@ footer {
   opacity: 1;
 }
 
+.item4 {
+  animation: items_show_up 1s backwards;
+  animation-delay: 600ms;
+  opacity: 1;
+}
+
 .menu-description {
   flex: 1;
   white-space: nowrap;
